@@ -12,16 +12,19 @@
 
 
 .head{
+    position:fixed;
+    top:0px;
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
    /* margin: 5px 20px; */
    border: 2px solid rgba(90, 188, 224, 0.7);
    color: rgb(255, 255, 255);
-   padding:1px 5px;
+   padding:1px 0px;
    border-radius: 10px;
    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-
+    width:100%;
+    background-color: black;
 }
 b:hover{
     text-shadow: 0px 0px 5px rgba(0, 255, 213,1);
@@ -144,11 +147,11 @@ a b{
     margin-top:100px ;
     flex-wrap: wrap;
 }
-button{
+a button{
     text-align: center;
     min-height: 5vh;
     height:auto;
-    width:20%;
+    width:fit-content;
     background-color: #66d9ff;
     border-style:inset;
     border-color: #00ffff;
@@ -160,4 +163,50 @@ button:hover{
     transform: translatey(-5px);
     box-shadow: 0px 0px 30px rgba(255, 255, 255,1);
     transform: box-shadow 0.7s ease;
+}
+#About , #destination , #ExclusiveTour , #FAQs , #Reviews{
+ background:transparent;
+
+}
+#About h1, #destination h1, #ExclusiveTour h1, #FAQs h1, #Reviews h1{
+    display:flex;
+    flex-wrap: wrap;
+    color:rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px rgb(217, 0, 255);
+    font-size: xx-large;
+    margin:0px;
+}
+#About p{
+    display:flex;
+    flex-wrap: wrap;
+    color:rgb(255, 255, 255);
+    text-shadow:0px 0px 5px black;
+    font-size:larger;
+}
+#About h1:hover {
+    color:rgb(217, 0, 255);
+    -webkit-text-stroke: 0.5px rgb(255, 0, 242);
+    transform: translatey(-5px);
+    text-shadow: 0px 0px 30px rgba(255, 255, 255,1);
+    transform: text-shadow 0.7s ease;
+}
+.logo{
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    width:auto;
+    justify-content:center;
+}
+.logo a img{
+    color:rgba(0, 0, 0,1);
+    /* background-color: transparent; */
+    background-clip: color;
+    width:25px;
+    height: auto ;
+    margin:0px 20px ;
+}
+small{
+    color:white;
+    display: flex;
+    justify-content: center;
+    -webkit-text-stroke: 0.5px rgb(217, 0, 255);
 }

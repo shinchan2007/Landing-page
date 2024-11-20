@@ -15,7 +15,8 @@
     position:fixed;
     top:0px;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
    /* margin: 5px 20px; */
    border: 2px solid rgba(90, 188, 224, 0.7);
@@ -25,6 +26,7 @@
    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
     width:100%;
     background-color: black;
+    height:5vh;
 }
 b:hover{
     text-shadow: 0px 0px 5px rgba(0, 255, 213,1);
@@ -164,11 +166,11 @@ button:hover{
     box-shadow: 0px 0px 30px rgba(255, 255, 255,1);
     transform: box-shadow 0.7s ease;
 }
-#About , #destination , #ExclusiveTour , #FAQs , #Reviews{
+#home{
  background:transparent;
 
 }
-#About h1, #destination h1, #ExclusiveTour h1, #FAQs h1, #Reviews h1{
+#home{
     display:flex;
     flex-wrap: wrap;
     color:rgb(255, 255, 255);
@@ -176,14 +178,14 @@ button:hover{
     font-size: xx-large;
     margin:0px;
 }
-#About p{
+#home p{
     display:flex;
     flex-wrap: wrap;
     color:rgb(255, 255, 255);
     text-shadow:0px 0px 5px black;
     font-size:larger;
 }
-#About h1:hover {
+#home h1:hover {
     color:rgb(217, 0, 255);
     -webkit-text-stroke: 0.5px rgb(255, 0, 242);
     transform: translatey(-5px);
